@@ -1,0 +1,28 @@
+@font-face {
+  font-display: fallback;
+  font-family: "Euclid Flex";
+  src: url("./ZoneEuclid-Regular-WebS.woff"),
+    url("./ZoneEuclid-Regular-WebS.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Euclid Flex";
+  src: url("./ZoneEuclid-Light-WebS.woff"), url("./ZoneEuclid-Light-WebS.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Euclid Flex";
+  src: url("./ZoneEuclid-Medium-WebS.woff"), url("./ZoneEuclid-Medium-WebS.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Euclid Flex";
+  src: url("./ZoneEuclid-Bold-WebS.woff"), url("./ZoneEuclid-Bold-WebS.ttf");
+  font-weight: 700;
+}
