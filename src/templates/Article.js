@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { css } from '@emotion/core'
 
@@ -6,7 +7,7 @@ import Layout from '../components/Layout'
 import Content from '../components/Content'
 import Hero from '../components/Hero'
 
-export default function Article({ children, data: { page } }) {
+export default function Article({ data: { page } }) {
   return (
     <Layout {...page.frontmatter}>
       <Hero {...page.frontmatter} />
@@ -19,6 +20,12 @@ export default function Article({ children, data: { page } }) {
       </div>
     </Layout>
   )
+}
+
+Article.propTypes = {
+  data: PropTypes.shape({
+    page: PropTypes.array.isRequired,
+  }).isRequired,
 }
 
 export const query = graphql`

@@ -4404,7 +4404,7 @@ eslint-module-utils@^2.2.0:
     debug "^2.6.8"
     pkg-dir "^1.0.0"
 
-eslint-plugin-compat@^2.5.1:
+eslint-plugin-compat@^2.5.1, eslint-plugin-compat@^2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-compat/-/eslint-plugin-compat-2.6.3.tgz#2606644110ab1150bec23a45034367ddbea1f1e9"
   integrity sha512-zog1HSEViOhzXNpP6a5T2SjX02A0EYkbYPWemwKupXyOY2hvV4+QbsWlYVzO7Vi36r+zzPwF19T3kaY1x+MrDg==
@@ -4555,7 +4555,7 @@ eslint@^4.19.1:
     table "4.0.2"
     text-table "~0.2.0"
 
-eslint@^5.6.0:
+eslint@^5.11.1, eslint@^5.6.0:
   version "5.11.1"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.11.1.tgz#8deda83db9f354bf9d3f53f9677af7e0e13eadda"
   integrity sha512-gOKhM8JwlFOc2acbOrkYR05NW8M6DCMSvfcJiBB5NDxRE1gv8kbvxKaC9u69e6ZGEMWXcswA/7eKR229cEIpvg==

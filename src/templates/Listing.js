@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import { css } from '@emotion/core'
 import Layout from '../components/Layout'
@@ -22,19 +23,11 @@ export default function Listing({ data: { page, subPages } }) {
         <Content>
           {subPages && (
             <ul>
-              {subPages.edges.map(
-                ({
-                  node: {
-                    id,
-                    path,
-                    context: { title },
-                  },
-                }) => (
-                  <li key={id}>
-                    <Link to={path}>{title}</Link>
-                  </li>
-                )
-              )}
+              {subPages.edges.map(({ node: { id, path, context: { title } } }) => (
+                <li key={id}>
+                  <Link to={path}>{title}</Link>
+                </li>
+              ))}
             </ul>
           )}
         </Content>
@@ -43,6 +36,13 @@ export default function Listing({ data: { page, subPages } }) {
       </div>
     </Layout>
   )
+}
+
+Listing.propTypes = {
+  data: PropTypes.shape({
+    page: PropTypes.array.isRequired,
+    subPages: PropTypes.array.isRequired,
+  }).isRequired,
 }
 
 export const query = graphql`

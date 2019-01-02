@@ -1,11 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Content from '../components/Content'
 
-const IndexPage = ({ data: { pages } }) => {
+export default function IndexPage({ data: { pages } }) {
   const formattedPages = pages.edges.map(
     ({
       node: {
@@ -23,7 +24,7 @@ const IndexPage = ({ data: { pages } }) => {
         depth,
       }
     },
-    {}
+    {},
   )
 
   return (
@@ -31,16 +32,23 @@ const IndexPage = ({ data: { pages } }) => {
       <Hero title="Zone Tech" />
       <Content>
         <ul>
-          {formattedPages.map(({ id, children, title, slug, depth }) => (
+          {formattedPages.map(({
+            id, title, slug, depth,
+          }) => (
             <li key={id} style={{ paddingLeft: `${1 * depth}em` }}>
               {new Array(depth + 1).join('-')} <Link to={slug}>{title}</Link>
-              {children && <PageGroup items={children} />}
             </li>
           ))}
         </ul>
       </Content>
     </Layout>
   )
+}
+
+IndexPage.propTypes = {
+  data: PropTypes.shape({
+    pages: PropTypes.array.isRequired,
+  }).isRequired,
 }
 
 export const query = graphql`
@@ -60,5 +68,3 @@ export const query = graphql`
     }
   }
 `
-
-export default IndexPage

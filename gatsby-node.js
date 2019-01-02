@@ -1,21 +1,18 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+// Implement Gatsby's Node APIs in this file.
+// See: https://www.gatsbyjs.org/docs/node-apis/
 
 const path = require('path')
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === 'MarkdownRemark') {
     createNodeField({
       node,
-      name: `slug`,
+      name: 'slug',
       value: createFilePath({
         node,
         getNode,
-        basePath: `content`,
+        basePath: 'content',
         trailingSlash: false,
       }),
     })
@@ -23,9 +20,10 @@ exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
 }
 
 exports.createPages = ({ actions: { createPage }, graphql }) => {
-  const ArticleTemplate = path.resolve(`src/templates/Article.js`)
-  const ListingTemplate = path.resolve(`src/templates/Listing.js`)
+  const ArticleTemplate = path.resolve('src/templates/Article.js')
+  const ListingTemplate = path.resolve('src/templates/Listing.js')
 
+  // eslint-disable-next-line compat/compat
   return new Promise((resolve, reject) => {
     graphql(`
       {
@@ -64,7 +62,7 @@ exports.createPages = ({ actions: { createPage }, graphql }) => {
         })
       })
 
-      resolve()
+      return resolve()
     })
   })
 }

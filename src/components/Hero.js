@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { css } from '@emotion/core'
 
 export default function Hero({ title, subTitle }) {
@@ -40,4 +41,9 @@ export default function Hero({ title, subTitle }) {
       </h1>
     </div>
   )
+}
+
+Hero.propTypes = {
+  title: PropTypes.string.isRequired,
+  subTitle: PropTypes.string,
 }
