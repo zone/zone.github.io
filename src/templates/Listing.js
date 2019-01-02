@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 import { css } from '@emotion/core'
-import Layout from '../components/Layout'
+
 import Content from '../components/Content'
 import Hero from '../components/Hero'
+import Layout from '../components/Layout'
 
 export default function Listing({ data: { page, subPages } }) {
   return (

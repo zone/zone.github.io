@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 
-import Layout from '../components/Layout'
-import Hero from '../components/Hero'
 import Content from '../components/Content'
+import Hero from '../components/Hero'
+import Layout from '../components/Layout'
 
 export default function IndexPage({ data: { pages } }) {
   const formattedPages = pages.edges.map(
