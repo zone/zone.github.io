@@ -1,4 +1,4 @@
 ---
 title: Backend
-description: A collection of backendend code challenges.
+description: A collection of backend code challenges.
 ---
