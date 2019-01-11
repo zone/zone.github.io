@@ -8,7 +8,7 @@ description: Display a list of movies allowing the user to filter by genre and r
 
 ## Introduction
 
-- 😍 Be sure to write comments and a README. Provide instructions on how to run the project and any notes about your solution.
+- 😍 Be sure to write comments, a README and any assumptions. Provide instructions on how to run the project and any notes about your solution.
 - 🤩 Feel free to use a JavaScript framework. We use React, Vue and plain JavaScript here but use what you’re most comfortable with.
 - 🤨 You can also use a starter kit like [Create React App][create-react-app] or [Vue CLI][vue-cli] to save time.
 - 🤗 We love clean, responsive interfaces. Pick your favourite [Google font][google-fonts] and layout the movies in a grid, adjusting the number of columns as the device width allows.
@@ -18,7 +18,7 @@ description: Display a list of movies allowing the user to filter by genre and r
 
 ## Brief
 
-Using the TMDb API display a list of now showing movies allowing the user to filter by genre and rating.
+Using the TMDb API display a list of now showing movies allowing the user to filter by genre and rating. Don't worry about pagination, the first page is fine.
 
 > Note: [You’ll need an TMDb account][tmdb-signup] to request an API key. Once you are registered, go to account settings and click 'API' in sidebar.
 
