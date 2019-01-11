@@ -8,7 +8,7 @@ description: Don't let the robot fall off the table!
 
 ## Introduction
 
-- 😍 Be sure to write comments and a README. Provide instructions on how to run the project and any notes about your solution.
+- 😍 Be sure to write comments, a README and any assumptions. Provide instructions on how to run the project and any notes about your solution.
 - 🤩 Feel free to use a JavaScript framework, we use React, Vue and plain JavaScript here but use what you’re most comfortable with.
 - 🤨 You can also use a starter kit like [Create React App][create-react-app] or [Vue CLI][vue-cli] to save time.
 - 🤗 UI is great but a clean layout and typography will do.
