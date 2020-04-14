@@ -24,8 +24,9 @@ export default function Layout({ children, title, description }) {
 
           body {
             color: var(--color-gunmetal);
-            font-family: 'Euclid Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-              Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: 'Euclid Flex', -apple-system, BlinkMacSystemFont,
+              'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+              'Helvetica Neue', sans-serif;
             font-size: 18px;
             font-weight: 300;
             line-height: 1.5;

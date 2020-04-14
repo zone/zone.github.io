@@ -62,7 +62,10 @@ export default function Content({ children, ...rest }) {
 
         a {
           color: inherit;
-          background-image: linear-gradient(rgba(16, 16, 229, 0.15), rgba(16, 16, 229, 0.15));
+          background-image: linear-gradient(
+            rgba(16, 16, 229, 0.15),
+            rgba(16, 16, 229, 0.15)
+          );
           background-position: 0 100%;
           background-repeat: no-repeat;
           background-size: 100% 0.5em;
