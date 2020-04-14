@@ -24,11 +24,19 @@ export default function Listing({ data: { page, subPages } }) {
         <Content>
           {subPages && (
             <ul>
-              {subPages.edges.map(({ node: { id, path, context: { title } } }) => (
-                <li key={id}>
-                  <Link to={path}>{title}</Link>
-                </li>
-              ))}
+              {subPages.edges.map(
+                ({
+                  node: {
+                    id,
+                    path,
+                    context: { title },
+                  },
+                }) => (
+                  <li key={id}>
+                    <Link to={path}>{title}</Link>
+                  </li>
+                )
+              )}
             </ul>
           )}
         </Content>

@@ -24,7 +24,7 @@ export default function IndexPage({ data: { pages } }) {
         depth,
       }
     },
-    {},
+    {}
   )
 
   return (
@@ -32,9 +32,7 @@ export default function IndexPage({ data: { pages } }) {
       <Hero title="Zone Tech" />
       <Content>
         <ul>
-          {formattedPages.map(({
-            id, title, slug, depth,
-          }) => (
+          {formattedPages.map(({ id, title, slug, depth }) => (
             <li key={id} style={{ paddingLeft: `${1 * depth}em` }}>
               {new Array(depth + 1).join('-')} <Link to={slug}>{title}</Link>
             </li>
