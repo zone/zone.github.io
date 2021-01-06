@@ -62,6 +62,5 @@ Outputs the X,Y and F of the robot. This can be in any form, but standard output
 - Be sure to write comments and a README. Provide instructions on how to run the project and any notes  about your solution.
 - We're most interested to see problem solving and your approach.
 - Keep it simple, keep it DRY, but don't over complicate or over engineer, comment and test as appropriate.
-- Commit your code to a public Git repository and provide us with the URL.
 - Don't spend days on this, but do let us know what you think is missing and what you'd add given more time.
 - Please do not copy solutions existing off the internet.
