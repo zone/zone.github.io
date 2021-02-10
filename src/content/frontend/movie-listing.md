@@ -15,6 +15,7 @@ description: Display a list of movies allowing the user to filter by genre and r
 - 🧐 We’re most interested to see problem solving and your approach… also ES6 please.
 - 😇 Keep it simple, keep it DRY, but don’t over complicate or over engineer, comment and test as much as possible.
 - 🤓 Commit your code to a public Git repository and provide us with the URL.
+- 😎 We know your time is precious. If you aren’t able to complete all tasks, or if you use third party styles or components to speed things up - no worries! Just detail what you’ve prioritised and why in your README.
 
 ## Brief
 
