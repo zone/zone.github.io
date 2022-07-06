@@ -5,10 +5,9 @@ info:
   version: 1.0.0
 paths:
   /fact:
-    
     get:
       tags:
-        - Facts
+        - Fact
       summary: Get Random Fact
       description: Returns a random fact
       operationId: getRandomFact
@@ -30,6 +29,8 @@ paths:
         '404':
           description: Fact not found
     post:
+      tags:
+        - Fact
       summary: Add new Fact
       description: Accept a new fact to be added to the data set
       operationId: AddFact
@@ -43,8 +44,6 @@ paths:
       responses:
         "405":
           description: "Invalid input"
-      tags:
-        - Facts
   /facts:
     get:
       tags:
@@ -96,3 +95,6 @@ components:
 tags:
   - name: Facts
     description: Cat Facts
+  - name: Fact
+    description: Cat Fact
+    

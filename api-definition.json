@@ -9,7 +9,7 @@
     "/fact": {
       "get": {
         "tags": [
-          "Facts"
+          "Fact"
         ],
         "summary": "Get Random Fact",
         "description": "Returns a random fact",
@@ -43,6 +43,9 @@
         }
       },
       "post": {
+		"tags": [
+          "Fact"
+        ],
         "summary": "Add new fact",
         "description": "Adds a new fact to the data set",
         "operationId": "addNewFact",
@@ -148,7 +151,11 @@
   "tags": [
     {
       "name": "Facts",
-      "description": "Cat Facts"
+      "description": "Facts about cats"
+    },
+	{
+      "name": "Fact",
+      "description": "A fact about cats"
     }
   ]
 }
