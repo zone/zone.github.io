@@ -8,8 +8,9 @@ description: Implement the API defined in the Swagger definition.
 This is not a test; we'd like to see how you approach a problem and construct a solution.
 
 - 😸 Be sure to write comments, a README and any assumptions. Provide instructions on how to run the project and any notes about your solution.
-- 😽 We’re most interested to see problem solving and your approach.
-- 😹 Keep it simple, keep it SOLID, comment and **test** as much as possible but don’t over complicate or over engineer.
+- 😻 We’re most interested to see problem solving and your approach.
+- 😹 Keep it simple, keep it SOLID, but don’t over complicate or over engineer.
+- 😽 Comment and **unit test** as appropriate.
 - 😺 Commit your code to a public Git repository and provide us with the URL.
 - 😻 We know your time is precious. If you're not able to complete all of tasks - no worries! Just detail what you’ve prioritised and why in your README.
 
@@ -20,12 +21,13 @@ Given the below Swagger definition and data file you need to implement the Cat F
 - <a href="/api-definition.json" target="_blank">Swagger Definition</a>
 - <a href="/cat-facts-data.json" target="_blank">Cat Facts Data File</a>
 
+*For the purpose of this challenge, the data can be read directly from and written back to the JSON file.*
 
 > Tip: You can view the swagger file using <a href="https://editor.swagger.io/" target="_blank">editor.swagger.io</a> .
 
 
 ## Tasks
-1. Setup your solution and implement the 'Get random fact' endpoint point.
+1. Setup your solution and implement the 'Get random fact' endpoint.
 
 2. Implement the 'List facts' endpoint.
 
